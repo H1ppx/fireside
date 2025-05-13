@@ -1,0 +1,23 @@
+{
+  "name": "fireside",
+  "version": "1.0.0",
+  "description": "Text tools for MPU5 radio transmissions",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/H1ppx/fireside.git"
+  },
+  "author": "William Chu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/H1ppx/fireside/issues"
+  },
+  "homepage": "https://github.com/H1ppx/fireside#readme",
+  "devDependencies": {
+    "electron": "^36.2.0"
+  }
+}
