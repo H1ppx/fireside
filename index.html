@@ -1,45 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Fireside</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Fireside</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <div class="app-info">
-      <div class="app-title">Fireside</div>
-      <div class="app-desc">Radio transmission text tools</div>
-    </div>
-    <div class="header-right">
-      <div id="status">Disconnected</div>
-      <button id="menu" class="hamburger">☰</button>
-    </div>
-  </header>
+    <header>
+        <div class="app-info">
+            <div class="app-title">Fireside</div>
+            <div class="app-desc">Radio transmission text tools</div>
+        </div>
+        <div class="header-right">
+            <div id="status">Disconnected</div>
+            <button id="menu" class="hamburger">☰</button>
+        </div>
+    </header>
 
-  <div id="chat-container">
-    <div class="message">Welcome to Fireside.</div>
-  </div>
+    <div class="app-container">
 
-  <div id="input-bar">
-    <input type="text" id="chat-input" placeholder="Enter your message..." />
-    <button id="send-btn">Send</button>
-  </div>
+        <div id="chat-container">
+            <div class="message">Welcome to Fireside.</div>
+        </div>
 
-  <!-- Sidebar -->
-  <div id="side-menu">
-    <div id="side-menu-content">
-      <label for="ip-input">IP Address</label>
-      <input type="text" id="ip-input" placeholder="e.g. 192.168.0.10">
-      <button id="connect-btn" data-connected="false">Connect</button>
-    </div>
-  </div>
+        <div id="input-bar">
+            <input type="text" id="chat-input" placeholder="Enter your message..." disabled/>
+            <button id="send-btn" disabled>Send</button>
+        </div>
+
+        <!-- Sidebar -->
+        <div id="side-menu">
+          <div id="side-menu-content">
+            <label for="ip-input">IP Address</label>
+            <input type="text" id="ip-input" placeholder="e.g. 192.168.0.10">
+            <button id="connect-btn" data-connected="false">Connect</button>
+          </div>
+        </div>
   
 
-  <!-- Backdrop -->
-  <div id="backdrop"></div>
+        <!-- Backdrop -->
+        <div id="backdrop"></div>
 
-  <script src="index.js"></script>
+        <!-- Custom Alert -->
+        <div id="custom-alert" class="hidden">
+            <div class="alert-box">
+              <p id="alert-message">This is a custom alert.</p>
+              <button id="alert-close">OK</button>
+            </div>
+        </div>
+
+    </div>
+
+
+  
+
+    <script src="index.js"></script>
 </body>
 </html>
